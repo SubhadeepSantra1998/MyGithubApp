@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/curve_background"
+    android:backgroundTint="@color/violet">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        app:lottie_rawRes="@raw/anim"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20ssp"
+        android:text="OOPS!"
+        android:textColor="@color/white"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:text="No Internet Connection"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:text="Please Check your connection"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retry"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_13sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:includeFontPadding="false"
+        android:layout_gravity="center_horizontal|center_vertical" />
+
+</LinearLayout>

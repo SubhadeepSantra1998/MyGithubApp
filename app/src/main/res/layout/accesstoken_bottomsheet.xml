@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:backgroundTint="@color/purple_500"
+        android:background="@drawable/bottom_curvehalf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:tint="@color/swipe_bar"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_5sdp"
+            android:src="@drawable/ic_tabselect" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:gravity="start"
+            android:text="To continue further,personal access token is required "
+            android:textColor="@color/grey_bg"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:id="@+id/et_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/roundedcorners"
+            android:hint="Please type your access token"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:drawableStart="@drawable/ic_baseline_token_24"
+            android:drawableTint="@color/white"
+            android:drawablePadding="@dimen/_8sdp" />
+
+        <LinearLayout
+            android:paddingBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnyes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:backgroundTint="#4CAF50"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:includeFontPadding="false"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btncancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:backgroundTint="#F44336"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_10ssp"
+                app:cornerRadius="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:includeFontPadding="false"
+                android:layout_gravity="center_horizontal|center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
